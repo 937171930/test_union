@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>failureDialog</class>
+ <widget class="QDialog" name="failureDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>186</width>
+    <height>245</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="myapp.qrc">
+    <normaloff>:/resource/failure.jpg</normaloff>:/resource/failure.jpg</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">border: 0 px;background-color:white;</string>
+  </property>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>25</y>
+     <width>186</width>
+     <height>220</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:black;color:rgb(0,255,0);</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>2</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:white;color:black;</string>
+   </property>
+   <property name="text">
+    <string>故障注入</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="myapp.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,86 @@
+/* === QMenuBar === */
+QMenuBar {
+    background-color: rgb(190,190,190);
+    color:  black;
+}
+
+QMenuBar::item {
+    background: transparent;
+}
+
+QMenuBar::item:disabled {
+    color: gray;
+}
+
+QMenuBar::item:selected {
+    color:  white;
+    background: #333333;
+}
+
+QMenuBar::item:pressed {
+    color:  white;
+    background: #333333;
+}
+
+/*Qmenu Style Sheets*/
+QMenu {
+    background-color: #DDDDDD; /* sets background of the menu 设置整个菜单区域的背景色，我用的是白色：white*/
+    border: 0px solid white;/*整个菜单区域的边框粗细、样式、颜色*/
+}
+
+QMenu::item {
+    /* sets background of menu item. set this to something non-transparent
+     if you want menu color and menu item color to be different */
+    font-size: 10;
+    background-color: transparent;
+    padding-left: 10px;
+}
+
+QMenu::item:selected { /* when user selects item using mouse or keyboard */
+    background-color: #55AAFF;/*这一句是设置菜单项鼠标经过选中的样式*/
+}
+
+QMainWindow {
+    background-color: rgb(180,180,180);
+    border: 2px solid rgb(100,100,100);
+}
+
+QDialog {
+    border: 2px solid rgb(140,140,140);
+}
+
+QFrame {
+    background-color: rgb(200,200,200);
+    border: 1px solid rgb(100,100,100);
+}
+
+QLabel {
+    background-color: rgb(140,140,140);
+    color: white;
+}
+
+QRadioButton::indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+}
+
+QRadioButton::indicator:checked {
+    background-color: red;
+    border: 3px solid white;
+}
+
+QRadioButton::indicator:unchecked {
+    background-color: white;
+    border: 3px solid white;
+}
+
+QTableWidget::item::selected {
+    background-color: lightblue;
+}
+
+QTableView {
+    background-color: rgba(200,255,255,255);
+    alternate-background-color: rgba(230,230,230,255);
+}
+
